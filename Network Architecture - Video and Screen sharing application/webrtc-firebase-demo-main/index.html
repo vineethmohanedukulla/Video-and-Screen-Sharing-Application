@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Demo</title>
+  </head>
+  <body>
+    <style>
+      .container {
+          display: flex;
+          background-color: #f3f1ee;
+          padding: 0px;
+          margin: 0px;
+          height: 73px;
+      }
+  
+      #logo {
+          flex : 5;
+          align-items: flex-start;
+          display: block;
+          margin-left: 20px;
+          margin-right: 20px;
+      }
+  
+      p {
+          flex: 1;
+          align-items: center;
+          margin-top: 0px;
+          margin-left: -82px;
+          padding-left: -26px;
+          padding-top: 24px;
+          text-decoration: none;
+          text-decoration-line: none;
+          text-decoration-thickness: initial;
+          text-decoration-style: initial;
+          text-decoration-color: initial;
+          color: grey;
+          align-items: center;
+          align-content: center;
+          text-align: center;
+      }
+      a {
+          flex: 1;
+          align-items: center;
+          margin-top: 0px;
+          margin-left: -82px;
+          padding-left: -26px;
+          padding-top: 24px;
+          text-decoration: none;
+          text-decoration-line: none;
+          text-decoration-thickness: initial;
+          text-decoration-style: initial;
+          text-decoration-color: initial;
+          color: grey;
+          align-items: center;
+          align-content: center;
+          text-align: center;
+      }
+      p:hover {
+          text-decoration: lime;
+      }
+      .coloring {
+          background-color: antiquewhite;
+      }
+  
+      body {
+          padding: 0px;
+          margin: 0px;
+          font-family: "cera_proregular", Arial, sans-serif;
+          font-size: 17px
+      }
+  
+      img {
+          border-radius: 0px;
+          border: 0px solid white;
+          border-radius: 0pm;
+          padding: 0px;
+          width: 20px;
+          height: 73px;
+          top: 19px;
+          width: 350px;
+      }
+  
+      td {
+          background:url(download.jpg) no-repeat
+      }
+  
+      #panel {
+          display: none;
+      }
+  
+      .hrcontainer {
+          display: flex;
+      }
+  
+      hr {
+          flex: 1;
+          height: 1px;
+          border: 0;
+          margin: 0;
+          padding: 0;
+      }
+  
+      a {
+          flex: 1;
+          height: 3px;
+          width: 4px;
+      }
+</style>
+<div class="container">
+  <img href="/" onclick="route(); refresh()" style="float: left; width: auto; height: 50px"
+       src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Adobe_Connect_icon_%282020%29.svg/1200px-Adobe_Connect_icon_%282020%29.svg.png" />
+  <p></p>
+  <a href="/" onclick="route(); refresh()">Video and Screen Sharing Web Application</a>
+  <p></p>
+  <p></p>
+  <a href="/about" onclick="route(); refresh()">Connect Video</a>
+  <a href="/lorem" onclick="route(); refresh()">Share Screen</a>
+<!--    <p>cards</p>-->
+<!--    <p> Insurance</p>-->
+<!--    <p>  Online features</p>-->
+</div>
+<div class="hrcontainer">
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr id="borrow">
+  <hr id="invest">
+  <hr id="cards">
+  <hr id="insurance">
+  <hr id="online">
+</div>  
+    <div id="main-page"></div>
+    
+    <script src="router.js"></script>
+    <script src="refresh.js"></script>
+    <script type="module" src="/main.js"></script>
+    <!-- <h2>1. Start your Webcam</h2>
+    <div class="videos">
+      <span>
+        <h3>Local Stream</h3>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span>
+        <h3>Remote Stream</h3>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+
+
+    </div>
+
+    <button id="webcamButton">Start webcam</button>
+    <h2>2. Create a new Call</h2>
+    <button id="callButton" disabled>Create Call (offer)</button>
+
+    <h2>3. Join a Call</h2>
+    <p>Answer the call from a different browser window or device</p>
+    
+    <input id="callInput" />
+    <button id="answerButton" disabled>Answer</button>
+
+    <h2>4. Hangup</h2>
+
+    <button id="hangupButton" disabled>Hangup</button>
+
+    <script type="module" src="/main.js"></script> -->
+
+  </body>
+</html>
